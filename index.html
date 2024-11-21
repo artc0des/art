@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="css/output.css">
+    <script src="js/nav.js" defer></script>
+    <link rel="shortcut icon" type="image/png" href="img/ghp_favicon.png">
+    <title>Art</title>
+</head>
+    <body class="bg-grad">
+    <div id="main" class="flex flex-col h-screen md:h-full bg-grad">
+        <div id="canvas" class="flex flex-col justify-center bg-[#2b3031] m-12 mt-0 p-4 space-y-10 shadow-md shadow-[#2b3031] rounded-xl">
+        <section id="header" class="mb-10">
+            <nav class="hidden md:px-14 md:pt-4 md:flex md:items-center justify-between font-bold text-[#d3fbd8]">
+                <div>
+                    <img src="img/ghp2.png" class="w-20 rounded-full" alt="">
+                </div>
+                <div class="flex space-x-4 font-inter h-full font-light">
+                        <a href="#" class="hover:text-[#00c5a0] duration-150">About Me</a>
+                        <a href="#" class="hover:text-[#00c5a0] duration-150">Experience</a>
+                        <a href="#" class="hover:text-[#00c5a0] duration-150">Hobbies</a>
+                        <a href="#" class="hover:text-[#00c5a0] duration-150">Contact</a>
+                </div>
+            </nav>
+            <nav class="mb-20 md:hidden">
+                <!-- Ham Menu -->
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+                <!-- Mobile Menu -->
+                <div id="menu" class="absolute border border-[#2b3031] font-light top-0 bottom-0 left-0 hidden flex-col max-h-40 self-end w-full py-1 pt-12 pl-16 space-y-2 text-sm text-[#d3fbd8] uppercase bg-[#2b3031]">
+                    <a href="#" class="hover:text-[#00c5a0]">About Me</a>
+                    <a href="#" class="hover:text-[#00c5a0]">Experience</a>
+                    <a href="#" class="hover:text-[#00c5a0]">Hobbies</a>
+                    <a href="#" class="hover:text-[#00c5a0]">Contact</a>
+                </div>
+            </nav>
+        </section>
+        <section id="intro" class="md:mx-4">
+            <!-- Change to flex box to add picture next to text or col in mobile -->
+            <article class="flex relative justify-center lg:justify-normal xl:justify-center text-wrap mx-auto lg:px-36 lg:space-x-14">
+                <div class="flex flex-col mx-3 max-w-xl px-8 justify-center md:justify-start text-center border border-[#d3fbd8] md:p-20">
+                    <h3 class="text-[#00c5a0] text-4xl my-6 font-bold md:text-6xl">Welcome to my world</h3>
+                    <p class="text-[#d3fbd8] pb-10 font-light text-sm md:text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum laboriosam, deleniti explicabo, animi consequuntur, eligendi vero dolorem sit culpa voluptas suscipit magni tenetur rerum quisquam ipsum quaerat ex odit asperiores.</p>
+                </div>
+                <img src="img/Art2.png" alt="" class="hidden absolute rounded-md shadow-md shadow-black left-1/2 bottom-1/3 h-3/4 lg:block xl:relative xl:mx-auto xl:left-0">
+            </article>
+        </section>
+        <section id="footer">
+            <div class="flex md:flex-row justify-start mx-10 md:max-w-6xl md:space-x-2 pb-6">
+                <div class="group relative">
+                    <img src="img/linkedin.svg" class="w-10 md:w-16" alt="">
+                    <a href="https://www.linkedin.com/in/arturo-cancino/" target="_blank"><img src="img/linkedin_h.svg" class="w-10 md:w-16 opacity-0 hover:opacity-100 absolute top-0 left-0 duration-150" alt=""></a>
+                </div>
+                <div class="group relative">
+                    <img src="img/github.svg" class="w-10 md:w-16" alt="">
+                    <a href="https://github.com/artc0des" target="_blank"><img src="img/github_highlight.svg" class="w-10 md:w-16 absolute top-0 left-0 opacity-0 hover:opacity-100 duration-150" alt=""></a>
+                </div>
+                <div class="group relative">
+                    <img src="img/x.svg" class="w-10 md:w-16" alt="">
+                    <a href="https://x.com/_artc0des" target="_blank"><img src="img/x_highlight.svg" class="w-10 md:w-16 absolute top-0 left-0 opacity-0 hover:opacity-100 duration-150" alt=""></a>
+                </div>
+                <div class="group relative">
+                    <img src="img/spotify.svg" class="w-10 md:w-16" alt="">
+                    <a href="https://open.spotify.com/artist/7hHNkz5E69E4dCrzXsE5vM?si=xhAr1Es_TNqpN4dWBtUMyg" target="_blank"><img src="img/spotify_highlight.svg" class="w-10 md:w-16 absolute top-0 left-0 opacity-0 hover:opacity-100 duration-150" alt=""></a>
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+</body>
+</html>
