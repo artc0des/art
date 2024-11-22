@@ -11,7 +11,7 @@
     <title>Art</title>
 </head>
     <body class="bg-grad">
-    <div id="main" class="flex flex-col h-screen md:h-full bg-grad">
+    <div id="main" class="flex flex-col h-full bg-grad">
         <div id="canvas" class="flex flex-col justify-center bg-[#2b3031] m-12 mt-0 p-4 space-y-10 shadow-md shadow-[#2b3031] rounded-xl">
         <section id="header" class="mb-10">
             <nav class="hidden md:px-14 md:pt-4 md:flex md:items-center justify-between font-bold text-[#d3fbd8]">
@@ -45,12 +45,15 @@
         </section>
         <section id="intro" class="md:mx-4">
             <!-- Change to flex box to add picture next to text or col in mobile -->
-            <article class="flex relative justify-center lg:justify-normal xl:justify-center text-wrap mx-auto lg:px-36 lg:space-x-14">
+            <article class="flex flex-col-reverse relative justify-center md:items-center lg:flex-row lg:justify-normal xl:justify-center text-wrap mx-auto lg:px-36 lg:space-x-14">
                 <div class="flex flex-col mx-3 max-w-xl px-8 justify-center md:justify-start text-center border border-[#d3fbd8] md:p-20">
                     <h3 class="text-[#00c5a0] text-4xl my-6 font-bold md:text-6xl">Welcome to my world</h3>
                     <p class="text-[#d3fbd8] pb-10 font-light text-sm md:text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum laboriosam, deleniti explicabo, animi consequuntur, eligendi vero dolorem sit culpa voluptas suscipit magni tenetur rerum quisquam ipsum quaerat ex odit asperiores.</p>
                 </div>
-                <img src="img/Art2.png" alt="" class="hidden absolute rounded-md shadow-md shadow-black left-1/2 bottom-1/3 h-3/4 lg:block xl:relative xl:mx-auto xl:left-0">
+                <img src="img/Art2.png" alt="" class="hidden rounded-md shadow-md shadow-black md:mb-10 md:h-80 lg:absolute lg:left-1/2 lg:bottom-1/3 lg:h-3/4 md:block xl:relative xl:mx-auto xl:left-0">
+                <div class="md:hidden mx-auto mb-10">
+                    <img src="img/Art2.png" alt="" class="rounded-md shadow-md shadow-black block h-40">
+                </div>
             </article>
         </section>
         <section id="footer">
