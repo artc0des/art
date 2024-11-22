@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: test;
+  font-family: youth;
   src: url('../fonts/Youthful_Demo.ttf');
 }
 
 h3 {
-    font-family: test;
+    font-family: youth;
 }
 
 
@@ -61,4 +61,8 @@ h3 {
 
 .bg-grad {
    background-image: linear-gradient(to top, #d3fbd8, #bbf1ca, #a0e7bd, #83ddb2, #60d3a9, #47c1a1, #2db098, #009e8e, #18817c, #266566, #2c4a4d, #2b3031);
+}
+
+html {
+  background-color: #2b3031;
 }
