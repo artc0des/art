@@ -1,0 +1,32 @@
+{{define "nav"}}
+<section id="header" class="mb-10">
+    <nav class="hidden md:px-14 md:pt-4 md:flex md:items-center justify-between font-bold text-oliveGreen">
+        <div>
+            <a href="/"><img src="/static/img/ghp2.png" class="w-20 rounded-full" alt=""></a>
+        </div>
+        <div class="flex space-x-4 font-inter h-full font-light">
+                <a href="/" class="hover:text-seaCreatureGreen duration-150">About Me</a>
+                <a href="/experience" class="hover:text-seaCreatureGreen duration-150">Experience</a>
+                <a href="/hobbies" class="hover:text-seaCreatureGreen duration-150">Hobbies</a>
+                <a href="/contact" class="hover:text-seaCreatureGreen duration-150">Contact</a>
+        </div>
+    </nav>
+    <nav class="flex flex-col md:hidden">
+        <!-- Ham Menu -->
+        <div class="md:hidden">
+            <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="menu" class="hidden border border-charcoalBG flex-col font-light self-end w-full py-1 pt-12 pl-16 space-y-2 text-sm text-oliveGreen uppercase bg-charcoalBG">
+            <a href="/" class="hover:text-seaCreatureGreen">About Me</a>
+            <a href="/experience" class="hover:text-seaCreatureGreen">Experience</a>
+            <a href="/hobbies" class="hover:text-seaCreatureGreen">Hobbies</a>
+            <a href="/contact" class="hover:text-seaCreatureGreen">Contact</a>
+        </div>
+    </nav>
+</section>
+{{end}}
