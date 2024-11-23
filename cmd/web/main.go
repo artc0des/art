@@ -22,7 +22,7 @@ func main() {
 		templateCache: cache,
 	}
 
-	err = http.ListenAndServe(":4000", app.routes())
+	err = http.ListenAndServe(":8080", app.routes())
 	if err != nil {
 		log.Fatal(err)
 	}
