@@ -4,7 +4,6 @@ import (
 	"html/template"
 	"log"
 	"net/http"
-	"os"
 )
 
 type application struct {
@@ -12,7 +11,8 @@ type application struct {
 }
 
 func main() {
-	port := os.Getenv("PORT")
+	//port := os.Getenv("PORT")
+	port := "4000"
 	log.Printf("starting server on port %v", port)
 
 	cache, err := setTemplateCache()

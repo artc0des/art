@@ -8,6 +8,10 @@ module.exports = {
       lg: '976px',
       xl: '1440px'
     },
+    fontFamily: {
+      madi: ["Ms Madi", "cursive"],
+      faja: ["Miss Fajardose", "Cursive"],
+    },
     extend: {
       colors: {
         oliveGreen: 'hsl(127.5, 83.33%, 90.59%)',

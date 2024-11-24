@@ -979,6 +979,10 @@ select {
   text-align: center;
 }
 
+.font-madi {
+  font-family: Ms Madi, cursive;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1035,15 +1039,14 @@ select {
   transition-duration: 150ms;
 }
 
-@font-face {
+/* @font-face {
   font-family: youth;
-
   src: url('../fonts/Youthful_Demo.ttf');
 }
 
 h3 {
-  font-family: youth;
-}
+    font-family: youth;
+} */
 
 /* ham menu settings */
 

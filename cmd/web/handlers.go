@@ -7,22 +7,10 @@ import (
 )
 
 func (app *application) home(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Referrer-Policy", "origin-when-cross-origin")
-	w.Header().Set("X-Content-Type-Options", "nosniff")
-	w.Header().Set("X-Frame-Options", "deny")
-	w.Header().Set("X-XSS-Protection", "0")
-	w.Header().Set("Server", "Go")
-
 	app.render(w, http.StatusOK, "about.html")
 
 }
 func (app *application) experience(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Referrer-Policy", "origin-when-cross-origin")
-	w.Header().Set("X-Content-Type-Options", "nosniff")
-	w.Header().Set("X-Frame-Options", "deny")
-	w.Header().Set("X-XSS-Protection", "0")
-	w.Header().Set("Server", "Go")
-
 	app.render(w, http.StatusOK, "experience.html")
 }
 func (app *application) hobbies(w http.ResponseWriter, r *http.Request) {
