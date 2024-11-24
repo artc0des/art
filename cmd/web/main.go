@@ -4,6 +4,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"os"
 )
 
 type application struct {
@@ -11,7 +12,8 @@ type application struct {
 }
 
 func main() {
-	log.Print("starting server on port 4000")
+	port := os.Getenv("PORT")
+	log.Printf("starting server on port %v", port)
 
 	cache, err := setTemplateCache()
 	if err != nil {
@@ -22,7 +24,7 @@ func main() {
 		templateCache: cache,
 	}
 
-	err = http.ListenAndServe(":8080", app.routes())
+	err = http.ListenAndServe(":"+port, app.routes())
 	if err != nil {
 		log.Fatal(err)
 	}
