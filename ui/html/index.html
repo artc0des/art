@@ -13,27 +13,32 @@
     <title>Art</title>
 </head>
     <body>
-    <div id="main" class="flex flex-col h-full bg-grad">
+    <div id="main" class=" flex-col h-full bg-grad duration-200">
         <div id="canvas" class="flex flex-col justify-center bg-charcoalBG m-12 mt-0 p-4 space-y-10 shadow-md shadow-[#2b3031] rounded-xl">
         {{template "nav" .}}
         {{template "main" .}}
         <section id="footer">
-            <div class="flex md:flex-row justify-start mx-10 md:max-w-6xl md:space-x-2 pb-6">
-                <div class="group relative">
-                    <img src="/static/img/linkedin.svg" class="w-10 md:w-16" alt="">
-                    <a href="https://www.linkedin.com/in/arturo-cancino/" target="_blank"><img src="/static/img/linkedin_h.svg" class="w-10 md:w-16 opacity-0 hover:opacity-100 absolute top-0 left-0 duration-150" alt=""></a>
+            <div class="flex flex-col space-y-2 items-center md:flex-row md:space-y-0 md:justify-between mx-10 md:max-w-6xl md:space-x-2 pb-6">
+                <div class="flex space-x-2">
+                    <div class="group relative">
+                        <img src="/static/img/linkedin.svg" class="w-10 md:w-16" alt="">
+                        <a href="https://www.linkedin.com/in/arturo-cancino/" target="_blank"><img src="/static/img/linkedin_h.svg" class="w-10 md:w-16 opacity-0 hover:opacity-100 absolute top-0 left-0 duration-150" alt=""></a>
+                    </div>
+                    <div class="group relative">
+                        <img src="/static/img/github.svg" class="w-10 md:w-16" alt="">
+                        <a href="https://github.com/artc0des" target="_blank"><img src="/static/img/github_highlight.svg" class="w-10 md:w-16 absolute top-0 left-0 opacity-0 hover:opacity-100 duration-150" alt=""></a>
+                    </div>
+                    <div class="group relative">
+                        <img src="/static/img/x.svg" class="w-10 md:w-16" alt="">
+                        <a href="https://x.com/_artc0des" target="_blank"><img src="/static/img/x_highlight.svg" class="w-10 md:w-16 absolute top-0 left-0 opacity-0 hover:opacity-100 duration-150" alt=""></a>
+                    </div>
+                    <div class="group relative">
+                        <img src="/static/img/spotify.svg" class="w-10 md:w-16" alt="">
+                        <a href="https://open.spotify.com/artist/7hHNkz5E69E4dCrzXsE5vM?si=xhAr1Es_TNqpN4dWBtUMyg" target="_blank"><img src="/static/img/spotify_highlight.svg" class="w-10 md:w-16 absolute top-0 left-0 opacity-0 hover:opacity-100 duration-150" alt=""></a>
+                    </div>
                 </div>
-                <div class="group relative">
-                    <img src="/static/img/github.svg" class="w-10 md:w-16" alt="">
-                    <a href="https://github.com/artc0des" target="_blank"><img src="/static/img/github_highlight.svg" class="w-10 md:w-16 absolute top-0 left-0 opacity-0 hover:opacity-100 duration-150" alt=""></a>
-                </div>
-                <div class="group relative">
-                    <img src="/static/img/x.svg" class="w-10 md:w-16" alt="">
-                    <a href="https://x.com/_artc0des" target="_blank"><img src="/static/img/x_highlight.svg" class="w-10 md:w-16 absolute top-0 left-0 opacity-0 hover:opacity-100 duration-150" alt=""></a>
-                </div>
-                <div class="group relative">
-                    <img src="/static/img/spotify.svg" class="w-10 md:w-16" alt="">
-                    <a href="https://open.spotify.com/artist/7hHNkz5E69E4dCrzXsE5vM?si=xhAr1Es_TNqpN4dWBtUMyg" target="_blank"><img src="/static/img/spotify_highlight.svg" class="w-10 md:w-16 absolute top-0 left-0 opacity-0 hover:opacity-100 duration-150" alt=""></a>
+                <div class="text-oliveGreen font-light italic">
+                    <p>This page was coded up by...me! Built with <a href="https://go.dev/" target="_blank" class="hover:font-bold hover:scale-110 duration-200">Go</a>, <a href="https://tailwindcss.com/" target="_blank" class="hover:font-bold hover:scale-110 duration-200">TailwindCSS</a> and a sprinkle of Javascript, then deployed to <a href="https://www.digitalocean.com/" target="_blank" class="hover:font-bold hover:scale-110 duration-200">Digital Ocean.</a></p>
                 </div>
             </div>
         </section>

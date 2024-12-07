@@ -1,10 +1,48 @@
 {{define "main"}}
     <section id="hobbies">
+        <!-- Tech -->
         <div class="container mx-auto p-4 border border-oliveGreen">
-            <h1>Hobbies and things</h1>
-            <p>Music and Deejaying</p>
-            <p>Reading and books</p>
-            <p>Tech stuff I'm learning</p>
+            <h1 class="font-bold text-6xl font-madi text-seaCreatureGreen">Tech</h1>
+            <div class="flex flex-col md:px-20 md:mb-10">
+                <div class="flex flex-col space-y-4 p-4 md:flex-row md:justify-between md:space-x-4 md:space-y-0">
+                    <p class="text-light text-oliveGreen">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi facere tempora totam at alias quia.</p>
+                    <div class="rounded-lg w-60 md:w-80 md:block">
+                        <img src="static/img/gopher.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        <!-- Music -->
+            <h1 class="font-bold text-6xl font-madi text-seaCreatureGreen">Music</h1>
+            <div class="flex flex-col md:px-20 md:mb-10">
+                <div class="flex flex-col space-y-4 p-4 md:flex-row md:justify-between md:space-x-4 md:space-y-0">
+                    <p class="text-light text-oliveGreen">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi facere tempora totam at alias quia.</p>
+                    <div class="rounded-lg shadow-sm shadow-black w-60 md:w-full">
+                        <video class="w-full rounded-lg hover:scale-110 duration-200" autoplay muted controls>
+                            <source src="/static/vid/live_play_cropped.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-4 p-4 md:flex-row md:justify-between md:space-x-4 md:space-y-0">
+                    <div class="rounded-lg w-60 md:w-full">
+                        <video class="rounded-lg hover:scale-110 duration-200 shadow-sm shadow-black" autoplay muted controls>
+                            <source src="/static/vid/prod.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="flex flex-col space-y-14">
+                    <p class="text-light text-oliveGreen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloremque recusandae cupiditate. Accusamus, quisquam sapiente!</p>
+                    <div class="transform rotate-12 px-10">
+                        <img src="static/img/albums.png" class="hidden w-40 shadow-sm shadow-black hover:scale-130 duration-200 rounded-lg lg:block" alt="">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Other -->
+            <h1 class="font-bold text-6xl font-madi text-seaCreatureGreen">Other Stuff</h1>
+            <div class="flex flex-col md:px-20">
+                <p class="text-light text-oliveGreen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae assumenda sit voluptatem nostrum tenetur libero nulla quod hic, quibusdam mollitia, porro amet sequi animi culpa adipisci beatae exercitationem nobis quia?</p>
+            </div>
         </div>
     </section>
 {{end}}
