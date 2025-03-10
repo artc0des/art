@@ -1,18 +1,23 @@
 {{define "main"}}
 <section id="intro" class="container mx-auto p-3 opacity-0 duration-1000 transform transition-all">
     <!-- Change to flex box to add picture next to text or col in mobile -->
-    <article class="flex flex-col-reverse relative justify-center md:items-center lg:flex-row lg:justify-normal xl:justify-center text-wrap mx-auto lg:space-x-14">
+    <article class="flex flex-col-reverse relative justify-center md:items-start lg:flex-row lg:justify-normal xl:justify-center text-wrap mx-auto lg:space-x-14 bg-blue-400">
         <div class="flex flex-col max-w-xl px-8 justify-center md:justify-start text-center border border-oliveGreen md:p-10">
-            <h3 class="text-seaCreatureGreen text-4xl my-6 font-madi font-bold md:text-6xl">Welcome!</h3>
-            <p class="text-oliveGreen pb-10 font-light text-sm md:text-xl">My name's Arturo (you can call me Art).<br> I'm a software engineer with 8 years of experience, primarily in back-end development and working
-                on expanding my design and front-end knowledge in order to create things that work but also look good.<br>
-                I consider myself a creative, both professionally and outside of work and so I'm on a journey to find the best way to express that through individual projects that ideally help others in some way. 
-                This page is meant to give you a glimpse into who I am, what I can do, what I've done in my career and more importantly, it represents a decision to share more.
-            </p>
+            <h3 class="text-seaCreatureGreen text-4xl my-6 font-madi font-bold md:text-6xl">Life Engineer &#x1F44B</h3>
+            <p class="text-oliveGreen pb-10 font-light text-sm md:text-xl">I am a individual contributor/coder who wants to help others in my team through mentorship. 
+                                                I am mainly driven by the people I get to work with, the company’s vision also has some weight on my drive. 
+                                                I like to implement solutions as they come to mind and continue to iterate on them. 
+                                                I value my independence at work and want to figure things out and successfully implement solutions while learning a ton. 
+                                                My interests lie in understanding the system as a whole. 
+                                                I enjoy designing a slick user experience while being able to connect the front-end to a back-end logic layer to achieve the end goal. 
+                                                A generalist. I want to contribute to a growing company where the product market fit has been identified and growth is ongoing. 
+                                                I also like the idea of overcoming my fear of judgement and leaning into sharing my own ideas and bringing them to fruition while sharing my (imperfect) journey.</p>
         </div>
-        <img src="/static/img/Art2.png" alt="" class="hidden rounded-md shadow-md shadow-black md:mb-10 md:h-80 lg:absolute lg:left-1/2 lg:bottom-1/3 lg:h-3/4 md:block xl:relative xl:mx-auto xl:left-0">
-        <div class="md:hidden mx-auto mb-10">
-            <img src="/static/img/Art2.png" alt="" class="rounded-md shadow-md shadow-black block h-40">
+        <div>
+            <img src="/static/img/Art2.png" alt="" class="hidden md:block rounded-lg shadow-md shadow-black">
+            <div class="md:hidden mx-auto mb-10">
+                <img src="/static/img/Art2.png" alt="" class="rounded-md shadow-md shadow-black block h-40">
+            </div>
         </div>
     </article>
 </section>
