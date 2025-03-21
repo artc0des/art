@@ -13,7 +13,7 @@ func (app *application) routes() http.Handler {
 
 	mux.HandleFunc("GET /{$}", app.home)
 	mux.HandleFunc("GET /experience", app.experience)
-	mux.HandleFunc("GET /hobbies", app.hobbies)
+	mux.HandleFunc("GET /about", app.about)
 	mux.HandleFunc("GET /contact", app.contact)
 
 	standardChain := alice.New(commonHeaders, app.requestLogger)

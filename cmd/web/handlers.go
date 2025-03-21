@@ -7,14 +7,14 @@ import (
 )
 
 func (app *application) home(w http.ResponseWriter, r *http.Request) {
-	app.render(w, http.StatusOK, "about.html")
+	app.render(w, http.StatusOK, "home.html")
 
 }
 func (app *application) experience(w http.ResponseWriter, r *http.Request) {
 	app.render(w, http.StatusOK, "experience.html")
 }
-func (app *application) hobbies(w http.ResponseWriter, r *http.Request) {
-	app.render(w, http.StatusOK, "hobbies.html")
+func (app *application) about(w http.ResponseWriter, r *http.Request) {
+	app.render(w, http.StatusOK, "about.html")
 }
 func (app *application) contact(w http.ResponseWriter, r *http.Request) {
 	app.render(w, http.StatusOK, "contact.html")

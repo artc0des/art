@@ -9,14 +9,14 @@ module.exports = {
       xl: '1440px'
     },
     fontFamily: {
-      madi: ["Ms Madi", "cursive"],
-      faja: ["Miss Fajardose", "Cursive"],
+      alma: ["Almarai", "sans-serif"],
     },
     extend: {
       colors: {
-        oliveGreen: 'hsl(127.5, 83.33%, 90.59%)',
-        seaCreatureGreen: 'hsl(168.73, 100%, 38.63%)',
-        charcoalBG: 'hsl(190, 6.52%, 18.04%)',
+        bgBlue: 'hsl(212.31, 17.81%, 28.63%)',
+        titleGray: 'hsl(167.14, 38.89%, 92.94%)',
+        contentWhite: 'hsl(205, 100%, 97.65%)',
+        borderGold: 'hsl(37.12, 50.43%, 54.12%)',
       },
     },
   },

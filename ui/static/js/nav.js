@@ -1,7 +1,7 @@
 const btn = document.getElementById('menu-btn')
 const menu = document.getElementById('menu')
 const header = document.getElementById('header')
-const intro = document.getElementById('intro')
+const intro = document.getElementById('hero')
 
 if (intro) {
     setTimeout(function() {
