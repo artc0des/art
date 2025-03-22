@@ -1,8 +1,8 @@
 {{define "main"}}
-<section id="hero" class="bg-red-200 container justify-between mx-auto px-5 py-3 opacity-0 duration-1000 transform transition-all">
+<section id="hero" class="container justify-between mx-auto px-5 py-3 opacity-0 duration-1000 transform transition-all">
     <!-- Change to flex box to add picture next to text or col in mobile -->
     <article class="flex flex-col-reverse lg:flex-row lg:justify-between text-wrap">
-        <div class="flex flex-col max-w-lg">
+        <div class="flex flex-col max-w-lg space-y-3">
             <h3 class="text-titleGray text-4xl font-alma font-bold tracking-tighter md:text-6xl">Art In The Making</h3>
             <p class="text-contentWhite text-2xl font-alma font-medium tracking-tight md:text-3xl">Hey! I'm Art.</p>
             <p class="text-contentWhite font-alma font-light text-xl tracking-normal">I’m here to find my community, establish professional 
@@ -17,7 +17,60 @@
         </div>
     </article>
 </section>
-<section id="projects" class="bg-red-300 container mx-auto p-3">
-    <h3>This is the projects container</h3>
+<section id="projects" class="container mx-auto p-3 space-y-6">
+    <div class="flex justify-between items-center">
+        <h3 class="text-titleGray text-4xl font-alma font-bold tracking-tighter md:text-6xl">Projects</h3>
+        <a href="https://artc0des.github.io/projects/" target="_blank"><button class="text-contentWhite text-xl font-alma rounded-lg font-bold border border-borderGold py-2 px-5">See All</button></a>
+    </div>
+    <div class="flex space-x-6 justify-between">
+        <div class="group relative overflow-hidden md:w-1/4 flex flex-col items-center justify-between">
+            <p class="content-style">Snippet Box</p>
+            <img
+              src="/static/img/test_screen.png"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <div class="bg-[#1e1e1e] flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
+                <p class="content-style tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloribus tenetur 
+                    excepturi dolorum amet id minima soluta exercitationem quasi.</p>
+                <div class="flex">
+                    <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-14 px-3">Go</button>
+                    <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-20 px-3">MySQL</button>
+                </div>
+            </div>
+        </div>
+        <div class="group relative overflow-hidden md:w-1/4 flex flex-col items-center justify-center">
+            <p class="content-style">Green Light</p>
+            <img
+              src="/static/img/test_screen.png"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <div class="bg-[#1e1e1e] flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
+                <p class="content-style tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloribus tenetur 
+                    excepturi dolorum amet id minima soluta exercitationem quasi.</p>
+                <div class="flex">
+                    <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-14 px-3">Go</button>
+                    <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-20 px-3">MySQL</button>
+                </div>
+            </div>
+        </div>
+        <div class="group relative overflow-hidden md:w-1/4 flex flex-col items-center justify-center">
+            <p class="content-style">Art In The Making</p>
+            <img
+              src="/static/img/test_screen.png"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <div class="bg-[#1e1e1e] flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
+                <p class="content-style tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloribus tenetur 
+                    excepturi dolorum amet id minima soluta exercitationem quasi.</p>
+                <div class="flex">
+                    <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-14 px-3">Go</button>
+                    <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-20 px-3">MySQL</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 {{end}}
