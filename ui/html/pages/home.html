@@ -25,54 +25,41 @@
     <div class="flex space-x-6 justify-between overflow-x-scroll p-3">
         <div class="group relative w-80 flex-none flex flex-col items-center justify-between">
             <p class="content-style">Snippet Box</p>
-            <img
-              src="/static/img/snippet.png"
-              alt=""
-              class="hidden w-full duration-200 md:block group-hover:scale-110"
-            />
-            <div class="bg-[#1e1e1e] flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
-                <p class="font-alma font-light text-contentWhite tracking-tight">
-                    Introductory project to Go and functional programming.
-                    Web app that allows users to register/signin, create text-based posts and see other user's posts in chronological order.<br><br>
-                    <i>Key learnings:<br></i>
-                    <ul class="font-alma font-light text-contentWhite tracking-tight">
-                        <li>MVC design pattern with template pre-loading and validation</li>
-                        <li>Functional routing and hadler implementation patterns</li>
-                        <li>User registration, authorization and authentication</li>
-                        <li>Middleware implementation request tracking and session creation</li>
-                        <li>Custom https server implementation</li>
-                        <li>Go unit testing</li>
-                        <li>JWT implementation</li>
-                    </ul>
-                </p>
+            <a href="https://github.com/artc0des/snippetbox" target="_blank"><div class="group relative bg-[#1e1e1e] hover:scale-110 duration-150">
+                <img
+                    src="/static/img/snippet.png"
+                    alt=""
+                    data-popover-target="popover-snippet" data-popover-placement="left" class="bg-[#1e1e1e] relative hidden w-full duration-200 md:block group-hover:opacity-0"
+                />
+                <div class="group">
+                    
+                        <img src="/static/img/code.png" class="w-20 opacity-0 group-hover:opacity-100 absolute top-10 left-32 duration-150" alt="">
+                </div>
+            </div>
+            </a>
+            <div class="bg-[#1e1e1e] flex flex-col w-80 justify-start items-center space-y-3 p-3 pb-3 rounded-b-xl">
                 <div class="flex space-x-2">
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-14 px-3">Go</button>
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-20 px-3">MySQL</button>
                 </div>
             </div>
-            
-
         </div>
         <div class="group relative w-80 flex-none flex flex-col items-center justify-center">
             <p class="content-style">Green Light</p>
-            <img
-              src="/static/img/greenlight.png"
-              alt=""
-              class="hidden w-full duration-200 md:block group-hover:scale-110"
-            />
-            <div class="bg-[#1e1e1e] flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
-                <p class="font-alma font-light text-contentWhite tracking-tight">
-                    Go-based movie database API implementation that allows users to register accounts, submit and request movie information with filtering and pagination<br><br>
-                    <i>Key learnings:<br></i>
-                    <ul class="font-alma font-light text-contentWhite tracking-tight">
-                        <li>JSON validation and error handling</li>
-                        <li>PostgreSQL text-based search and data indexing</li>
-                        <li>Rate limiting token bucket implementation per user IP</li>
-                        <li>Email based notification and account validation feature</li>
-                        <li>Graceful system shutdown</li>
-                        <li>System monitoring techniques</li>
-                    </ul>
-                </p>
+            <a href="https://github.com/artc0des/greenlight" target="_blank"><div class="group relative bg-[#1e1e1e] hover:scale-110 duration-150">
+                <img
+                    src="/static/img/greenlight.png"
+                    alt=""
+                    data-popover-target="popover-greenlight" data-popover-placement="left" class="bg-[#1e1e1e] relative hidden w-full duration-200 md:block group-hover:opacity-0"
+                />
+                <div class="group">
+                    
+                        <img src="/static/img/code.png" class="w-20 opacity-0 group-hover:opacity-100 absolute top-10 left-32 duration-150" alt="">
+                </div>
+            </div>
+            </a>
+            <div class="bg-[#1e1e1e] w-80 p-3 flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
+                
                 <div class="flex space-x-2">
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-14 px-3">Go</button>
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-25 px-3">PostgreSQL</button>
@@ -81,21 +68,19 @@
         </div>
         <div class="group relative w-80 flex-none flex flex-col items-center justify-center">
             <p class="content-style">Art In The Making</p>
-            <img
-              src="/static/img/artscreens.png"
-              alt=""
-              class="hidden w-full duration-200 md:block group-hover:scale-110"
-            />
-            <div class="bg-[#1e1e1e] flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
-                <p class="font-alma font-light text-contentWhite tracking-tight">
-                    Personal website and brand ongoing project<br><br>
-                    <i>Key learnings:<br></i>
-                    <ul class="font-alma font-light text-contentWhite tracking-tight">
-                        <li>UI/UX Design basics</li>
-                        <li>TailwindCSS for styling</li>
-                        <li>Figma for prototyping</li>
-                    </ul>
-                </p>
+            <a href="https://github.com/artc0des/art" target="_blank"><div class="group relative bg-[#1e1e1e] hover:scale-110 duration-150">
+                <img
+                    src="/static/img/artscreens.png"
+                    alt=""
+                    data-popover-target="popover-art" data-popover-placement="left" class="bg-[#0e1e1e] relative hidden w-full duration-200 md:block group-hover:opacity-0"
+                />
+                <div class="group">
+                        <img src="/static/img/code.png" class="w-20 opacity-0 group-hover:opacity-100 absolute top-10 left-32 duration-150" alt="">
+                </div>
+            </div>
+            </a>
+            <div class="bg-[#1e1e1e] w-80 p-3 flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
+                
                 <div class="flex space-x-2">
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-14 px-3">Go</button>
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-25 px-3">TailwindCSS</button>
@@ -104,6 +89,64 @@
             </div>
         </div>
     </div>
-    
+    <div data-popover id="popover-snippet" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Description</h3>
+        </div>
+        <div class="px-3 py-2">
+            <p class="font-alma font-light text-contentWhite tracking-tight">
+                Introductory project to Go and functional programming.
+                Web app that allows users to register/signin, create text-based posts and see other user's posts in chronological order.<br><br>
+                <i>Key learnings:<br></i>
+                <ul class="font-alma font-light text-contentWhite tracking-tight">
+                    <li>MVC design pattern with template pre-loading and validation</li>
+                    <li>Functional routing and hadler implementation patterns</li>
+                    <li>User registration, authorization and authentication</li>
+                    <li>Middleware implementation request tracking and session creation</li>
+                    <li>Custom https server implementation</li>
+                    <li>Go unit testing</li>
+                    <li>JWT implementation</li>
+                </ul>
+            </p>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+    <div data-popover id="popover-greenlight" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Description</h3>
+        </div>
+        <div class="px-3 py-2">
+            <p class="font-alma font-light text-contentWhite tracking-tight">
+                Go-based movie database API implementation that allows users to register accounts, submit and request movie information with filtering and pagination<br><br>
+                <i>Key learnings:<br></i>
+                <ul class="font-alma font-light text-contentWhite tracking-tight">
+                    <li>JSON validation and error handling</li>
+                    <li>PostgreSQL text-based search and data indexing</li>
+                    <li>Rate limiting token bucket implementation per user IP</li>
+                    <li>Email based notification and account validation feature</li>
+                    <li>Graceful system shutdown</li>
+                    <li>System monitoring techniques</li>
+                </ul>
+            </p>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+    <div data-popover id="popover-art" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Description</h3>
+        </div>
+        <div class="px-3 py-2">
+            <p class="font-alma font-light text-contentWhite tracking-tight">
+                Personal website and brand ongoing project<br><br>
+                <i>Key learnings:<br></i>
+                <ul class="font-alma font-light text-contentWhite tracking-tight">
+                    <li>UI/UX Design basics</li>
+                    <li>TailwindCSS for styling</li>
+                    <li>Figma for prototyping</li>
+                </ul>
+            </p>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
 </section>
 {{end}}
