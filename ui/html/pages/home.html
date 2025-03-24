@@ -22,8 +22,8 @@
         <h3 class="text-titleGray text-4xl font-alma font-bold tracking-tighter md:text-6xl">Projects</h3>
         <a href="https://artc0des.github.io/projects/" target="_blank"><button class="text-contentWhite text-xl font-alma rounded-lg font-bold border border-borderGold py-2 px-5">See All</button></a>
     </div>
-    <div class="flex space-x-6 justify-between">
-        <div class="group relative overflow-hidden md:w-1/4 flex flex-col items-center justify-between">
+    <div class="flex space-x-6 justify-between overflow-x-scroll p-3">
+        <div class="group relative w-80 flex-none flex flex-col items-center justify-between">
             <p class="content-style">Snippet Box</p>
             <img
               src="/static/img/snippet.png"
@@ -31,15 +31,29 @@
               class="hidden w-full duration-200 md:block group-hover:scale-110"
             />
             <div class="bg-[#1e1e1e] flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
-                <p class="content-style tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloribus tenetur 
-                    excepturi dolorum amet id minima soluta exercitationem quasi.</p>
-                <div class="flex">
+                <p class="font-alma font-light text-contentWhite tracking-tight">
+                    Introductory project to Go and functional programming.
+                    Web app that allows users to register/signin, create text-based posts and see other user's posts in chronological order.<br><br>
+                    <i>Key learnings:<br></i>
+                    <ul class="font-alma font-light text-contentWhite tracking-tight">
+                        <li>MVC design pattern with template pre-loading and validation</li>
+                        <li>Functional routing and hadler implementation patterns</li>
+                        <li>User registration, authorization and authentication</li>
+                        <li>Middleware implementation request tracking and session creation</li>
+                        <li>Custom https server implementation</li>
+                        <li>Go unit testing</li>
+                        <li>JWT implementation</li>
+                    </ul>
+                </p>
+                <div class="flex space-x-2">
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-14 px-3">Go</button>
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-20 px-3">MySQL</button>
                 </div>
             </div>
+            
+
         </div>
-        <div class="group relative overflow-hidden md:w-1/4 flex flex-col items-center justify-center">
+        <div class="group relative w-80 flex-none flex flex-col items-center justify-center">
             <p class="content-style">Green Light</p>
             <img
               src="/static/img/greenlight.png"
@@ -47,15 +61,25 @@
               class="hidden w-full duration-200 md:block group-hover:scale-110"
             />
             <div class="bg-[#1e1e1e] flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
-                <p class="content-style tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloribus tenetur 
-                    excepturi dolorum amet id minima soluta exercitationem quasi.</p>
-                <div class="flex">
+                <p class="font-alma font-light text-contentWhite tracking-tight">
+                    Go-based movie database API implementation that allows users to register accounts, submit and request movie information with filtering and pagination<br><br>
+                    <i>Key learnings:<br></i>
+                    <ul class="font-alma font-light text-contentWhite tracking-tight">
+                        <li>JSON validation and error handling</li>
+                        <li>PostgreSQL text-based search and data indexing</li>
+                        <li>Rate limiting token bucket implementation per user IP</li>
+                        <li>Email based notification and account validation feature</li>
+                        <li>Graceful system shutdown</li>
+                        <li>System monitoring techniques</li>
+                    </ul>
+                </p>
+                <div class="flex space-x-2">
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-14 px-3">Go</button>
-                    <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-20 px-3">MySQL</button>
+                    <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-25 px-3">PostgreSQL</button>
                 </div>
             </div>
         </div>
-        <div class="group relative overflow-hidden md:w-1/4 flex flex-col items-center justify-center">
+        <div class="group relative w-80 flex-none flex flex-col items-center justify-center">
             <p class="content-style">Art In The Making</p>
             <img
               src="/static/img/artscreens.png"
@@ -63,14 +87,23 @@
               class="hidden w-full duration-200 md:block group-hover:scale-110"
             />
             <div class="bg-[#1e1e1e] flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
-                <p class="content-style tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloribus tenetur 
-                    excepturi dolorum amet id minima soluta exercitationem quasi.</p>
-                <div class="flex">
+                <p class="font-alma font-light text-contentWhite tracking-tight">
+                    Personal website and brand ongoing project<br><br>
+                    <i>Key learnings:<br></i>
+                    <ul class="font-alma font-light text-contentWhite tracking-tight">
+                        <li>UI/UX Design basics</li>
+                        <li>TailwindCSS for styling</li>
+                        <li>Figma for prototyping</li>
+                    </ul>
+                </p>
+                <div class="flex space-x-2">
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-14 px-3">Go</button>
-                    <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-20 px-3">MySQL</button>
+                    <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-25 px-3">TailwindCSS</button>
+                    <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-25 px-3">Figma</button>
                 </div>
             </div>
         </div>
     </div>
+    
 </section>
 {{end}}
