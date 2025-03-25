@@ -79,15 +79,7 @@ if (intro) {
     setTimeout(function() {
         intro.classList.remove('opacity-0')
         intro.classList.add('opacity-100')
-    }, 500) 
-}
-
-if (projects) {
-    setTimeout(function() {
-        projects.classList.remove('opacity-0')
-        projects.classList.add('opacity-100')
-        projects.classList.remove('-translate-x-full')
-    }, 500) 
+    }, 250) 
 }
 
 btn.addEventListener('click', navToggle)

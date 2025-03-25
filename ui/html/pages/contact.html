@@ -1,9 +1,23 @@
 {{define "main"}}
-<h1 class="hide h-1/4 m-52 text-xl">Hi mom</h1>
-<h1 class="hide h-1/4 m-52 text-xl">Hi mom</h1>
-<h1 class="hide h-1/4 m-52 text-xl">Hi mom</h1>
-<h1 class="hide h-1/4 m-52 text-xl">Hi mom</h1>
-<h1 class="hide h-1/4 m-52 text-xl">Hi mom</h1>
-<h1 class="hide h-1/4 m-52 text-xl">Hi mom</h1>
-<h1 class="hide h-1/4 m-52 text-xl">Hi mom</h1>
+<section id="contact" class="container justify-between mx-auto px-4 py-3 opacity-100 duration-700 transform transition-all">
+  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <h1 class="hide mb-4 text-4xl tracking-tighter text-center text-titleGray font-bold font-alma md:text-6xl">Contact Me</h1>
+      <p class="mb-8 lg:mb-16 font-light text-center text-gray-300 sm:text-xl font-alma">Get in touch via email!</p>
+      <form action="#" class="space-y-8">
+          <div>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+              <input type="email" id="email" class="font-alma shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-borderGold focus:border-borderGold block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 text-contentWhite" placeholder="your@email.com" required>
+          </div>
+          <div>
+              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+              <input type="text" id="subject" class="font-alma block p-3 w-full text-sm text-contentWhite 0 rounded-lg border border-gray-600 shadow-sm focus:ring-borderGold focus:border-borderGold bg-gray-700 shadow-sm-light" placeholder="" required>
+          </div>
+          <div class="sm:col-span-2">
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+              <textarea id="message" rows="6" class="font-alma block p-2.5 w-full text-sm text-contentWhite rounded-lg shadow-sm border focus:ring-borderGold focus:border-borderGold bg-gray-700 border-gray-600 placeholder-gray-400" placeholder="Leave a message..."></textarea>
+          </div>
+          <button type="submit" class="font-alma py-3 px-5 text-sm font-medium text-center text-gray-300 border border-gray-500 hover:border-borderGold rounded-lg bg-primary-700 sm:w-fit focus:ring-4 focus:outline-none bg-primary-700 focus:ring-borderGold">Send message</button>
+      </form>
+  </div>
+</section>
 {{end}}

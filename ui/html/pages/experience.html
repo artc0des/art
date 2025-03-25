@@ -1,236 +1,77 @@
 {{define "main"}}
-    <section id="experience">
-        <div class="container mx-auto p-6 border border-oliveGreen">
-            <div class="grid grid-cols-1 grid-rows-7 gap-4 md:grid-rows-6 md:grid-cols-3">
-                <!-- profile -->
-                <div class="bg-charcoalBG shadow-sm shadow-black group row-span-2 rounded-lg duration-200 text-white p-4">
-                    <div class="flex flex-col justify-start p-2 space-y-4">
-                        <!-- Title -->
-                        <h3 class="text-oliveGreen font-semibold">Arturo Cancino</h3>
-                        <!-- Content -->
-                        <p class="text-oliveGreen group-hover:text-white font-light">Software engineer passionate about learning. Knowledgeable in Go, Java, C#, APIs & micro-services. Proven team player looking for the right culture to thrive in.
-                        </p>
-                        <a href="mailto:arturo.cancino.jobs@gmail.com" class="hover:text-seaCreatureGreen duration-150">arturo.cancino.jobs@gmail.com</a>
-                        <!-- Skill tags -->
-                        <div class="hidden md:flex justify-start items-center space-x-2">
-                            <div class="bg-seaCreatureGreen text-white px-1 text-sm rounded-lg text-center font-bold">Go</div>
-                            <div class="bg-seaCreatureGreen text-white px-1 text-sm rounded-lg text-center font-bold">.Net</div>
-                            <div class="bg-seaCreatureGreen text-white px-1 text-sm rounded-lg text-center font-bold">Java</div>
-                            <div class="bg-seaCreatureGreen text-white px-1 text-sm rounded-lg text-center font-bold">SpringBoot</div>
-                            <div class="bg-seaCreatureGreen text-white px-1 text-sm rounded-lg text-center font-bold">SQL</div>
-                        </div>
-                        <div class="hidden md:flex justify-start items-center space-x-2">
-                            <div class="bg-seaCreatureGreen text-white px-1 text-sm rounded-lg text-center font-bold">TailwindCSS</div>
-                            <div class="bg-seaCreatureGreen text-white px-1 text-sm rounded-lg text-center font-bold">Git</div>
-                            <div class="bg-seaCreatureGreen text-white px-1 text-sm rounded-lg text-center font-bold">Javascript</div>
-                            <div class="bg-seaCreatureGreen text-white px-1 text-sm rounded-lg text-center font-bold">NodeJS</div>
-                        </div>
-                        <!-- Resume Link -->
-                        <a class="bg-white text-black text-center font-bold rounded-lg hover:bg-seaCreatureGreen duration-200" href="static/docs/Arturo_Cancino_Software_Engineer_2024.pdf" download="Arturo_Cancino_Software_Engineer_2024">View Full Resume</a>
+    <section id="experience" class="container justify-between mx-auto px-5 py-3 opacity-100 duration-700 transform transition-all">
+        <h1 class="text-titleGray hide text-4xl font-alma font-bold tracking-tighter md:text-6xl border-b-2 border-borderGold">Experience</h1>
+        <article class="flex px-3 py-5">
+            <div class="flex flex-col">
+                <div class="flex">
+                    <div class="flex flex-col p-y-2 font-alma w-1/4">
+                        <p class="text-xl font-normal text-titleGray py-9 mb-1">2022-Present</p>
                     </div>
-                </div>
-                <!-- Experience -->
-                <div class="bg-charcoalBG shadow-sm row-span-4 shadow-black rounded-lg text-white p-4 md:col-span-2">
-                    <!-- Title -->
-                    <div class="flex justify-start max-w-lg items-center space-x-2 border-b-2 border-oliveGreen mb-4">
-                        <div class="h-1 w-1 rounded-full bg-seaCreatureGreen animate-ping"></div>
-                        <h3 class="text-oliveGreen font-semibold">Experience</h3>
-                    </div>
-                        <!-- Senior Exp -->
-                        <div class="flex flex-col justify-start md:hover:scale-110 hover:bg-charcoalBG rounded-lg shadow-sm shadow-black text-oliveGreen p-2 duration-150 hover:text-white">
-                            <div class="flex justify-start items-start space-y-4 md:items-center md:space-x-4 md:space-y-0">
-                                <!-- Logo and Role Title-->
-                                <div class="p-2 w-16"><img class="rounded-full" src="/static/img/Charles_Schwab_Corporation_logo.svg" alt=""></div>
-                                <h3 class="font-bold text-white hover:text-white">Software Engineer III - Senior</h3>
-                            </div>
-                            <!-- Description -->
-                            <div class="flex flex-col">
-                                <div class="flex flex-col md:flex-row space-x-2">
-                                    <div class="flex justify-start items-center">
-                                    <img class="p-2 w-9" src="static/img/work.svg" alt="">
-                                    <p class=" text-xs">Charles Schwab</p>
-                                    </div>
-                                    <div class="flex justify-start items-center">
-                                    <img class="p-2 w-9" src="static/img/location.svg" alt="">
-                                    <p class=" text-xs">Austin, TX</p>
-                                    </div>
-                                    <div class="flex justify-start items-center">
-                                    <img class="p-2 w-9" src="static/img/calendar.svg" alt="">
-                                    <p class=" text-xs">01/2020 - Present</p>
-                                    </div>
-                                </div>
-                                <h3 class="font-bold">User Global Navigation Initiative</h3>
-                                <p class="font-light">Led the design and implementation an improved user navigation system,
-                                                        displaying accurate navigation data and product recommendations in a SPA
-                                                        and MPA system, expanding coverage to 99% from 70% across all of
-                                                        Schwab.com while removing external team dependencies.</p>
-                            </div>
-                        </div>
-                        <!-- Associate Exp -->
-                        <div class="flex flex-col justify-start md:hover:scale-110 hover:bg-charcoalBG rounded-lg shadow-sm shadow-black text-oliveGreen p-2 duration-150 hover:text-white">
-                            <div class="flex justify-start items-start space-y-4 md:items-center md:space-x-4 md:space-y-0">
-                                <!-- Logo and Role Title-->
-                                <div class="p-2 w-16"><img class="rounded-full" src="/static/img/Charles_Schwab_Corporation_logo.svg" alt=""></div>
-                                <h3 class="font-bold text-white hover:text-white">Associate Software Engineer</h3>
-                            </div>
-                            <!-- Description -->
-                            <div class="flex flex-col">
-                                <div class="flex flex-col md:flex-row space-x-2">
-                                    <div class="flex justify-start items-center">
-                                    <img class="p-2 w-9" src="static/img/work.svg" alt="">
-                                    <p class=" text-xs">Charles Schwab</p>
-                                    </div>
-                                    <div class="flex justify-start items-center">
-                                    <img class="p-2 w-9" src="static/img/location.svg" alt="">
-                                    <p class=" text-xs">Austin, TX</p>
-                                    </div>
-                                    <div class="flex justify-start items-center">
-                                    <img class="p-2 w-9" src="static/img/calendar.svg" alt="">
-                                    <p class=" text-xs">08/2016 - 01/2020</p>
-                                    </div>
-                                </div>
-                                <h3 class="font-bold">[10b5-1 Org] System Refactor</h3>
-                                <p class="font-light">Led and implemented an improved solution to tracking user navigation within Schwab.com ensuring accurate menu highlights across
-                                     all SPAs and MPAs, improving menu display coverage from 70% to 99% in production while removing external team dependenciesLed the
-                                      redesign of a critical client data store system, replacing an outdated spreadsheet-based model with a Java back-end and internal SQL 
-                                      database, significantly reducing the risk of data loss 
-                                      Collaborated with 01b5 team leadership regularly to research and design solutions</p>
-                            </div>
-                        </div>
-                        <!-- Mindtree Exp -->
-                        <div class="flex flex-col justify-start rounded-lg shadow-sm shadow-black text-oliveGreen p-2 md:hover:scale-110 hover:bg-charcoalBG duration-150 hover:text-white">
-                            <div class="flex justify-start items-start space-y-4 md:items-center md:space-x-4 md:space-y-0">
-                                <!-- Logo and Role Title-->
-                                <div class="p-2 w-20"><img class="rounded-full" src="/static/img/mindtree.png" alt=""></div>
-                                <h3 class="font-bold text-white hover:text-white">Software Engineer</h3>
-                            </div>
-                            <!-- Description -->
-                            <div class="flex flex-col">
-                                <div class="flex flex-col md:flex-row space-x-2">
-                                    <div class="flex justify-start items-center">
-                                    <img class="p-2 w-9" src="static/img/work.svg" alt="">
-                                    <p class=" text-xs">Mindtree Ltd.</p>
-                                    </div>
-                                    <div class="flex justify-start items-center">
-                                    <img class="p-2 w-9" src="static/img/location.svg" alt="">
-                                    <p class=" text-xs">Gainesville, FL</p>
-                                    </div>
-                                    <div class="flex justify-start items-center">
-                                    <img class="p-2 w-9" src="static/img/calendar.svg" alt="">
-                                    <p class=" text-xs">06/2015 - 08/2016</p>
-                                    </div>
-                                </div>
-                                <h3 class="font-bold">[Southwest Airlines] Deployment System</h3>
-                                <p class="font-light">Developed an internal tool responsible for tracking weekly deployment 
-                                    cycles improving cross-team productivity Successfully integrated shell scripts in AWS cloud servers, resulting in 
-                                    the automation of DevOps processes and the reduction of risk during deployment by removing manual steps</p>
-                            </div>
-                        </div>
-  
-                </div>                   
-                <!-- about me -->
-                <div class="hidden md:block hover:bg-charcoalBG row-span-2 group shadow-sm md:hover:scale-110 duration-200 shadow-black rounded-lg text-white p-4">
-                    <!-- Title -->
-                    <div class="flex justify-start max-w-lg items-center space-x-2 border-b-2 border-oliveGreen">
-                        <div class="h-1 w-1 rounded-full bg-seaCreatureGreen animate-ping"></div>
-                        <h3 class="text-oliveGreen group-hover:text-white font-semibold">About Me</h3>
-                    </div>
-                    <p class="mb-2 p-2 rounded-md">
-                        <div class="mb-2 pb-3 text-oliveGreen group-hover:text-white"> 
-                            Work in progress.<br>I value growth in my life and proving to myself I'm able to accomplish things that feel intimidating or challenging. I also enjoy doing things that feel easy and fun - not just challenging!
-                            Outside of corporate work, I spend my time learning what is needed to create my own projects for users (this site being an example). That involves learning more Golang, general back-end security and monitoring practices, how to implement different DB types
-                            and reading up on system design.
-                        </div>
-                    </p>
-                </div>
-                
-                <!-- information -->
-                <div class="bg-charcoalBG shadow-sm md:max-h-80 rounded-lg text-white p-4">
-                    <!-- Title -->
-                    <div class="flex justify-start max-w-lg items-center space-x-2 border-b-2 border-oliveGreen mb-4">
-                        <div class="h-1 w-1 rounded-full bg-seaCreatureGreen animate-ping"></div>
-                        <h3 class="text-oliveGreen font-semibold">Info</h3>
-                    </div>
-                    <div class="flex flex-col p-2">
-                        <div class="flex justify-between text-oliveGreen p-2 rounded-md hover:text-white duration-150 shadow-sm shadow-black">
-                            <p>Location</p>
-                            <p>Austin, TX</p>
-                        </div>
-                        <div class="flex justify-between text-oliveGreen p-2 rounded-md shadow-sm shadow-black hover:text-white duration-150">
-                            <p>Experience</p>
-                            <p>8 Yrs</p>
-                        </div>
-                        <div class="flex justify-between text-oliveGreen p-2 rounded-md shadow-sm shadow-black hover:text-white duration-150">
-                            <p>Availability</p>
-                            <p>2 weeks to 1 month</p>
-                        </div>
-                        <div class="flex justify-between text-oliveGreen p-2 rounded-md shadow-sm shadow-black hover:text-white duration-150">
-                            <p>Relocation</p>
-                            <p>Yes</p>
+                    <div class="flex flex-col p-y-2 font-alma w-3/4">
+                        <p class="text-3xl font-medium text-titleGray">Charles Schwab</p>
+                        <p class="text-xl font-normal text-titleGray">Senior Software Engineer</p>
+                        <p class="text-contentWhite font-light text-lg tracking-normal">Led the design and implementation an improved user navigation system, 
+                                                        displaying accurate navigation data and product recommendations in a SPA and MPA system, expanding coverage 
+                                                        to 99% from 70% across all of Schwab.com while removing external team dependencies</p>
+                        <div class="flex justify-start items-start p-3 space-x-3 mb-6 pl-0">
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">C#</button>
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">ASP.NET</button>
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">PCF</button>
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">React</button>
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">Typescript</button>
                         </div>
                     </div>
                 </div>
-                <!-- Education -->
-                <div class="bg-charcoalBG shadow-sm rounded-lg text-white p-4 md:col-span-2">
-                    <!-- Title -->
-                    <div class="flex justify-start max-w-lg items-center space-x-2 border-b-2 border-oliveGreen mb-4">
-                        <div class="h-1 w-1 rounded-full bg-seaCreatureGreen animate-ping"></div>
-                        <h3 class="text-oliveGreen font-semibold">Education</h3>
+                <div class="flex">
+                    <div class="flex flex-col p-y-2 font-alma w-1/4">
+                        <p class="text-xl font-normal text-titleGray py-2 mb-1">2016-2022</p>
                     </div>
-                    <div class="flex flex-col justify-start">
-                        <div class="rounded-lg shadow-sm shadow-black text-oliveGreen hover:bg-charcoalBG p-2 md:hover:scale-110 duration-200 hover:text-white">
-                            <div class="flex justify-start items-start space-x-4">
-                                <!-- Logo -->
-                                <div class="p-2 w-16"><img class="rounded-full" src="/static/img/uf_logo1.png" alt=""></div>
-                                <!-- Description -->
-                                <div class="flex flex-col">
-                                    <h3 class="font-bold text-white hover:text-white">Bachelor of Science in Computer Engineering</h3>
-                                    <div class="flex flex-col md:flex-row md:space-x-2">
-                                        <div class="flex flex-col md:flex-row justify-start md:items-center">
-                                            <img class="p-2 w-9" src="static/img/education.svg" alt="">
-                                            <p>University of Florida</p>
-                                        </div>
-                                        <div class="flex flex-col md:flex-row justify-start md:items-center">
-                                            <img class="p-2 w-9" src="static/img/location.svg" alt="">
-                                            <p>Gainesville, FL</p>
-                                        </div>
-                                        <div class="flex flex-col md:flex-row justify-start md:items-center">
-                                            <img class="p-2 w-9" src="static/img/calendar.svg" alt="">
-                                            <p>2015</p>
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="flex flex-col p-y-2 font-alma w-3/4">
+                        <p class="text-xl font-normal text-titleGray">Associate Software Engineer</p>
+                        <p class="text-contentWhite font-light text-lg tracking-normal">Led the redesign of a critical client data store system, 
+                            replacing a legacy spreadsheet-based model with a Java-backed MySQL persistence layer, mitigating potential millions in 
+                            risk of data loss and improving data accessibility for downstream systems</p>
+                        <div class="flex justify-start items-start p-3 space-x-3 mb-6 pl-0">
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">Java</button>
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">Spring Boot</button>
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">MySQL</button>
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">Splunk</button>
                         </div>
                     </div>
-                    <div class="flex flex-col justify-start">
-                        <div class="rounded-lg shadow-sm shadow-black text-oliveGreen hover:bg-charcoalBG p-2 md:hover:scale-110 duration-200 hover:text-white">
-                            <div class="flex justify-start items-start space-x-4">
-                                <!-- Logo -->
-                                <div class="p-2 w-16"><img class="rounded-full" src="/static/img/mdc.svg" alt=""></div>
-                                <!-- Description -->
-                                <div class="flex flex-col">
-                                    <h3 class="font-bold text-white hover:text-white">Associate of Science in Computer Engineering</h3>
-                                    <div class="flex flex-col md:flex-row space-x-2">
-                                        <div class="flex flex-col md:flex-row justify-start md:items-center">
-                                            <img class="p-2 w-9" src="static/img/education.svg" alt="">
-                                            <p>Miami Dade College</p>
-                                        </div>
-                                        <div class="flex flex-col md:flex-row justify-start md:items-center">
-                                            <img class="p-2 w-9" src="static/img/location.svg" alt="">
-                                            <p>Miami, FL</p>
-                                        </div>
-                                        <div class="flex flex-col md:flex-row justify-start md:items-center">
-                                            <img class="p-2 w-9" src="static/img/calendar.svg" alt="">
-                                            <p>2013</p>
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+                <div class="flex">
+                    <div class="flex flex-col p-y-2 font-alma w-1/4">
+                        <p class="text-xl font-normal text-titleGray py-9 mb-1">2015-2014</p>
+                    </div>
+                    <div class="flex flex-col p-y-2 font-alma w-3/4">
+                        <p class="text-3xl font-medium text-titleGray">Mindtree LTD.</p>
+                        <p class="text-xl font-normal text-titleGray">Software Engineer</p>
+                        <p class="text-contentWhite font-light text-lg tracking-normal">Developed an internal deployment tracking tool that improved 
+                            cross-team productivity, resulting in a 10% reduction in deployment-related errors</p>
+                        <div class="flex justify-start items-start p-3 space-x-3 mb-6 pl-0">
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">Java</button>
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">Bamboo</button>
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">Jenkins</button>
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">Bash</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex flex-col p-y-2 font-alma w-1/4">
+                        <p class="text-xl font-normal text-titleGray py-2 mb-1">2014-2015</p>
+                    </div>
+                    <div class="flex flex-col p-y-2 font-alma w-3/4">
+                        <p class="text-xl font-normal text-titleGray">Software Engineer Intern</p>
+                        <p class="text-contentWhite font-light text-lg tracking-normal">Successfully integrated shell scripts in AWS cloud servers, 
+                            resulting in the automation of DevOps processes and the reduction of risk during deployment by removing manual steps</p>
+                        <div class="flex justify-start items-start p-3 space-x-3 pl-0">
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">C#</button>
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">ASP.NET</button>
+                            <button class="rounded-3xl bg-[#2a2e47] text-contentWhite font-bold font-alma text-xl py-1 px-3">AWS</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     </section>
 {{end}}
