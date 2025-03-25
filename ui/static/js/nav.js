@@ -6,6 +6,23 @@ const home = document.getElementById('home_link')
 const about = document.getElementById('about_link')
 const experience = document.getElementById('experience_link')
 const contact = document.getElementById('contact_link')
+const projects = document.getElementById('projects') 
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            entry.target.classList.remove('hide')
+        } else {
+            entry.target.classList.remove('show')
+            entry.target.classList.add('hide');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hide')
+hiddenElements.forEach((el) => observer.observe(el))
 
 window.onload = function() {
     let path = window.location.href
@@ -62,6 +79,14 @@ if (intro) {
     setTimeout(function() {
         intro.classList.remove('opacity-0')
         intro.classList.add('opacity-100')
+    }, 500) 
+}
+
+if (projects) {
+    setTimeout(function() {
+        projects.classList.remove('opacity-0')
+        projects.classList.add('opacity-100')
+        projects.classList.remove('-translate-x-full')
     }, 500) 
 }
 

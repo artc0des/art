@@ -1,55 +1,7 @@
 {{define "main"}}
-    <section id="hobbies">
-        <div class="container mx-auto p-4 md:p-10 border border-oliveGreen">
-        <!-- Tech -->
-            <div class="flex flex-col md:mb-10">
-                <h1 class="font-bold text-6xl font-madi text-seaCreatureGreen">Tech</h1>
-                <!-- <div class="flex flex-col space-y-4 p-4 md:flex-row md:justify-between md:space-x-4 md:space-y-0"> -->
-                <div class="grid grid-cols-1 grid-rows-1 gap-12 md:grid-cols-3 md:grid-rows-1">
-                    <p class="text-light text-oliveGreen md:col-span-2">I've spending my time recently learning Go and studying system design along with DSA. I've recently finished going through the <a href="https://lets-go.alexedwards.net/" target="_blank" class="font-bold">Let's Go</a> book and have implemented a simple enough CRUD app
-                        with a MySQL database to store user signup/login data and a middleware layer that handles user auth and session creation, request logging, CSRF security, common headers per request along with some front-end templating, caching and centralized error handling. <br>
-                        I've also taken the time to make this site which uses Go and TailwindCSS in order to learn how to make sites look (more) professional. Or at least presentable. All in efforts to be able to create systems of my own and understand them better.<br>
-                        I'm in the process of expanding my breadth while building additional depth tied to back-end implementation. Plus I want to enjoy what I'm doing. I'm on a quest to find and expand on the things I like about creating software.<br>                        
-
-                        Project info here: <a class="text-seaCreatureGreen font-bold" href="https://artc0des.github.io/projects/" target="_blank">https://artc0des.github.io/projects/</a>
-                    </p>
-                    <div class="rounded-lg w-60 md:mr-40 md:block h-fit">
-                        <img src="static/img/gopher.svg" alt="">
-                    </div>
-                </div>
-                <!-- </div> -->
-            </div>
-        <!-- Music -->
-            <div class="flex flex-col  md:mb-10">
-                <h1 class="font-bold text-6xl font-madi text-seaCreatureGreen">Music</h1>
-                <div class="grid grid-cols-1 grid-rows-4 md:grid-cols-5 md:grid-rows-2 gap-4 mb-10">
-                    <p class="text-light text-oliveGreen md:col-span-3">I also decided to become a DJ and I've been at it for the past 7 years or so. Not professionally, but my hobby has taken me to different parts of the world and I'll always be grateful for that. It has also contributed to my growth in different ways. Talking on the mic as someone who's more of an introvert type took some time, but we got there.<br>
-                        My hobby helped me realize I can succeed at most things with enough dedication and consistency. You never know what direction something will go. I try to apply that to other areas of my life as well.
-                    </p>
-                    <div class="rounded-lg shadow-sm mx-auto w-80 md:col-span-2 md:w-full">
-                        <video class="w-full rounded-lg hover:scale-110 duration-200" autoplay muted controls>
-                            <source src="/static/vid/live_play_cropped.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                <div class="rounded-lg mx-auto w-80 md:w-80 md:col-span-2">
-                        <video class="rounded-lg hover:scale-110 duration-200 shadow-sm shadow-black" autoplay muted controls>
-                            <source src="/static/vid/prod.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                </div>
-                <div class="flex flex-col space-y-14 md:col-span-3">
-                    <p class="text-light text-oliveGreen">I eventually found my way behind a computer screen again and got into producing music. It can feel quite different from deejaying live - it's just you and whatever you are creating. 
-                        Similar to writing code, it's creative and requires structure</p>                
-                </div>
-            </div>
-        </div>
-        <!-- Other -->
-            <div class="flex flex-col ">
-                <h1 class="font-bold text-6xl font-madi text-seaCreatureGreen">Other Stuff</h1>
-                <p class="text-light text-oliveGreen">I try to read at least 20min a day and mostly fail at meditating consistenly, but it's getting better. 
-                    <a href="https://www.goodreads.com/user/show/118055061-art" target="_blank" class="font-bold">Here</a>'s the stuff I'm reading if you're interested.</p>
-            </div>
-        </div>
-    </section>
+    <section id="about" class="container justify-between mx-auto px-5 py-3 opacity-100 duration-700 transform transition-all">
+        <article class="flex flex-col">
+            <h1 class="text-titleGray text-4xl font-alma font-bold tracking-tighter md:text-6xl border-b-2 border-borderGold">About Me</h1>
+    </article>
+</section>
 {{end}}

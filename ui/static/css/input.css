@@ -60,6 +60,14 @@ h3 {
 .content-style {
   @apply text-contentWhite font-alma font-light text-xl;
 }
+
+.show {
+  @apply opacity-100 duration-1000 transform transition-all translate-x-0;
+}
+
+.hide {
+  @apply opacity-0 duration-1000 transform transition-all -translate-x-full;
+}
 html {
   background-color: #2b3031;
 }
