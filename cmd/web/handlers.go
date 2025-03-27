@@ -2,37 +2,54 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"net/http"
+
+	"github.com/justinas/nosurf"
 )
 
+type emailForm struct {
+	Email   string `form:"email"`
+	Subject string `form:"subject"`
+	Message string `form:"message"`
+}
+
 func (app *application) home(w http.ResponseWriter, r *http.Request) {
-	app.render(w, http.StatusOK, "home.html")
+	app.render(w, r, http.StatusOK, "home.html", "")
 
 }
 func (app *application) experience(w http.ResponseWriter, r *http.Request) {
-	app.render(w, http.StatusOK, "experience.html")
+	app.render(w, r, http.StatusOK, "experience.html", "")
 }
 func (app *application) about(w http.ResponseWriter, r *http.Request) {
-	app.render(w, http.StatusOK, "about.html")
+	app.render(w, r, http.StatusOK, "about.html", "")
 }
 func (app *application) contact(w http.ResponseWriter, r *http.Request) {
-	app.render(w, http.StatusOK, "contact.html")
+	CSRFToken := nosurf.Token(r)
+	app.render(w, r, http.StatusOK, "contact.html", CSRFToken)
+}
+func (app *application) contactForm(w http.ResponseWriter, r *http.Request) {
+	var incomingForm emailForm
+
+	err := app.decodePostForm(r, &incomingForm)
+	if err != nil {
+		app.clientError(w, http.StatusBadRequest)
+		return
+	}
+
+	http.Redirect(w, r, "/", http.StatusSeeOther)
 }
 
-func (app *application) render(w http.ResponseWriter, status int, page string) {
+func (app *application) render(w http.ResponseWriter, r *http.Request, status int, page string, data string) {
 	ts, ok := app.templateCache[page]
 	if !ok {
 		err := fmt.Errorf("template does not exist in html folder")
-		log.Print(err.Error())
-		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+		app.serverError(w, r, err)
 		return
 	}
 
 	w.WriteHeader(status)
-	err := ts.ExecuteTemplate(w, "index", nil)
+	err := ts.ExecuteTemplate(w, "index", data)
 	if err != nil {
-		log.Print(err.Error())
-		http.Error(w, "Internal server error", http.StatusInternalServerError)
+		app.serverError(w, r, err)
 	}
 }

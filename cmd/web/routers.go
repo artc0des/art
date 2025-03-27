@@ -14,8 +14,11 @@ func (app *application) routes() http.Handler {
 	mux.HandleFunc("GET /{$}", app.home)
 	mux.HandleFunc("GET /experience", app.experience)
 	mux.HandleFunc("GET /about", app.about)
-	mux.HandleFunc("GET /contact", app.contact)
+	dynamicMiddleware := alice.New(app.noSurf)
+	mux.Handle("GET /contact", dynamicMiddleware.ThenFunc(app.contact))
+	mux.Handle("POST /contact", dynamicMiddleware.ThenFunc(app.contactForm))
 
-	standardChain := alice.New(commonHeaders, app.requestLogger)
+	standardChain := alice.New(app.recoverPanic, app.requestLogger, commonHeaders)
+
 	return standardChain.Then(mux)
 }
