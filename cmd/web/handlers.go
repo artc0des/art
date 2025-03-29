@@ -36,6 +36,19 @@ func (app *application) contactForm(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	/*err = app.mailer.Send(incomingForm.Email, incomingForm.Subject, incomingForm.Message)
+	if err != nil {
+		app.serverError(w, r, err)
+		return
+	}*/
+	app.background(func() {
+		err = app.mailer.Send(incomingForm.Email, incomingForm.Subject, incomingForm.Message)
+		if err != nil {
+			app.serverError(w, r, err)
+			return
+		}
+	})
+
 	http.Redirect(w, r, "/", http.StatusSeeOther)
 }
 

@@ -29,9 +29,9 @@ h3 {
   height: 2px;
   top: 0;
   left: 0;
-  background: #d3fbd8;
+  background: #c6984f;
   transform: rotate(0);
-  transition: all 0.5s;
+  transition: all 1.0s;
 }
 
 .hamburger-middle {

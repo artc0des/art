@@ -1,5 +1,5 @@
 {{define "main"}}
-<section id="hero" class="container justify-between mx-auto px-5 py-3 opacity-0 duration-1000 transform transition-all">
+<section id="hero" class="container max-w-sm md:max-w-screen-lg xl:max-w-screen-xl justify-between mx-auto p-3 opacity-0 duration-1000 transform transition-all">
     <!-- Change to flex box to add picture next to text or col in mobile -->
     <article class="flex flex-col-reverse lg:flex-row lg:justify-between text-wrap">
         <div class="flex flex-col max-w-lg space-y-3">
@@ -9,78 +9,96 @@
                                                                     connections and share my journey with others. 
                                                                     <br><a href="/about"><div class=" tracking-normal font-alma text-xl text-borderGold">Read more...</div></a></p>
         </div>
-        <div class="px-5 h-80 w-80 items-center">
-            <img src="/static/img/Art2.png" alt="" class="hidden md:block rounded-lg object-fill shadow-md shadow-black">
-            <div class="md:hidden mx-auto mb-10">
-                <img src="/static/img/Art2.png" alt="" class="rounded-md shadow-md shadow-black block h-40">
-            </div>
+        <div class="hidden md:block px-5 h-80 w-80 items-center">
+            <img src="/static/img/Art2.png" alt="" class="rounded-lg object-fill shadow-md shadow-black">
         </div>
+        
     </article>
 </section>
-<section id="projects" class="hide container mx-auto p-3 space-y-6">
+<section id="projects" class="hide container max-w-sm md:max-w-screen-lg xl:max-w-screen-xl mx-auto p-3 space-y-6">
     <div class="flex justify-between items-center">
         <h3 class="text-titleGray text-4xl font-alma font-bold tracking-tighter md:text-6xl">Projects</h3>
         <a href="https://artc0des.github.io/projects/" target="_blank"><button class="text-contentWhite text-xl font-alma rounded-lg font-bold border border-borderGold py-2 px-5">See All</button></a>
     </div>
-    <div class="flex space-x-6 justify-between overflow-x-scroll p-3">
-        <div class="group relative w-80 flex-none flex flex-col items-center justify-between">
-            <p class="content-style">Snippet Box</p>
-            <a href="https://github.com/artc0des/snippetbox" target="_blank"><div class="group relative bg-[#1e1e1e] hover:scale-110 duration-150">
-                <img
-                    src="/static/img/snippet.png"
-                    alt=""
-                    data-popover-target="popover-snippet" data-popover-placement="left" class="bg-[#1e1e1e] relative hidden w-full duration-200 md:block group-hover:opacity-0"
-                />
-                <div class="group">
-                    
-                        <img src="/static/img/code.png" class="w-20 opacity-0 group-hover:opacity-100 absolute top-10 left-32 duration-150" alt="">
+    <div class="flex flex-col justify-between space-y-10 p-3 md:space-y-0 md:flex-row md:space-x-6 md:overflow-x-scroll">
+        <div class="flex flex-col items-center md:group md:relative h-40 md:w-80 md:flex-none md:items-center md:justify-between">
+            <p class="text-contentWhite text-lg font-alma md:content-style">Snippet Box</p>
+            <a href="https://github.com/artc0des/snippetbox" target="_blank">
+                <div class="hidden md:block group relative w-full h-full bg-[#1e1e1e] hover:scale-110 duration-150">
+                    <img
+                        src="/static/img/snippet.png"
+                        alt=""
+                        data-popover-target="popover-snippet" data-popover-placement="left" class="bg-[#1e1e1e] relative h-40 w-full md:h-full duration-200 group-hover:opacity-0"
+                    />
+                    <div class="group">
+                            <img src="/static/img/code.png" class="w-20 opacity-0 group-hover:opacity-100 absolute top-10 left-32 duration-150" alt="">
+                    </div>
                 </div>
-            </div>
+                <div class="group relative h-40 w-fit md:hidden bg-[#1e1e1e] duration-150">
+                    <img
+                        src="/static/img/snippet.png"
+                        alt=""
+                        class="bg-[#1e1e1e] relative h-40 w-full md:h-full duration-200 group-hover:opacity-50"
+                    />
+                </div>
             </a>
-            <div class="bg-[#1e1e1e] flex flex-col w-80 justify-start items-center space-y-3 p-3 pb-3 rounded-b-xl">
+            <div class="hidden bg-[#1e1e1e] md:flex md:flex-col md:w-80 md:justify-start md:items-center space-y-3 p-3 pb-3 rounded-b-xl">
                 <div class="flex space-x-2">
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-14 px-3">Go</button>
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-20 px-3">MySQL</button>
                 </div>
             </div>
         </div>
-        <div class="group relative w-80 flex-none flex flex-col items-center justify-center">
-            <p class="content-style">Green Light</p>
-            <a href="https://github.com/artc0des/greenlight" target="_blank"><div class="group relative bg-[#1e1e1e] hover:scale-110 duration-150">
-                <img
-                    src="/static/img/greenlight.png"
-                    alt=""
-                    data-popover-target="popover-greenlight" data-popover-placement="left" class="bg-[#1e1e1e] relative hidden w-full duration-200 md:block group-hover:opacity-0"
-                />
-                <div class="group">
-                    
-                        <img src="/static/img/code.png" class="w-20 opacity-0 group-hover:opacity-100 absolute top-10 left-32 duration-150" alt="">
+        <div class="flex flex-col items-center md:group md:relative h-40 md:w-80 md:flex-none md:items-center md:justify-between">
+            <p class="text-contentWhite text-lg font-alma md:content-style">Green Light</p>
+            <a href="https://github.com/artc0des/greenlight" target="_blank">
+                <div class="hidden md:block group relative w-full h-full bg-[#1e1e1e] hover:scale-110 duration-150">
+                    <img
+                        src="/static/img/greenlight.png"
+                        alt=""
+                        data-popover-target="popover-greenlight" data-popover-placement="left" class="bg-[#1e1e1e] relative h-40 w-full md:h-full duration-200 group-hover:opacity-0"
+                    />
+                    <div class="group">
+                            <img src="/static/img/code.png" class="w-20 opacity-0 group-hover:opacity-100 absolute top-10 left-32 duration-150" alt="">
+                    </div>
                 </div>
-            </div>
+                <div class="group relative h-40 w-fit md:hidden bg-[#1e1e1e] duration-150">
+                    <img
+                        src="/static/img/greenlight.png"
+                        alt=""
+                        class="bg-[#1e1e1e] relative h-40 w-full md:h-full duration-200 group-hover:opacity-50"
+                    />
+                </div>
             </a>
-            <div class="bg-[#1e1e1e] w-80 flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
-                
+            <div class="hidden bg-[#1e1e1e] md:flex md:flex-col md:w-80 md:justify-start md:items-center space-y-3 p-3 pb-3 rounded-b-xl">
                 <div class="flex space-x-2">
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-14 px-3">Go</button>
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-25 px-3">PostgreSQL</button>
                 </div>
             </div>
         </div>
-        <div class="group relative w-80 flex-none flex flex-col items-center justify-center">
-            <p class="content-style">Art In The Making</p>
-            <a href="https://github.com/artc0des/art" target="_blank"><div class="group relative bg-[#1e1e1e] hover:scale-110 duration-150">
-                <img
-                    src="/static/img/artscreens.png"
-                    alt=""
-                    data-popover-target="popover-art" data-popover-placement="left" class="bg-[#0e1e1e] relative hidden w-full duration-200 md:block group-hover:opacity-0"
-                />
-                <div class="group">
-                        <img src="/static/img/code.png" class="w-20 opacity-0 group-hover:opacity-100 absolute top-10 left-32 duration-150" alt="">
+        <div class="flex flex-col items-center md:group md:relative h-fit md:w-80 md:flex-none md:items-center md:justify-between">
+            <p class="text-contentWhite text-lg font-alma md:content-style">Art In The Making</p>
+            <a href="https://github.com/artc0des/art" target="_blank">
+                <div class="hidden md:block group relative w-full h-full bg-[#1e1e1e] hover:scale-110 duration-150">
+                    <img
+                        src="/static/img/artscreens.png"
+                        alt=""
+                        data-popover-target="popover-art" data-popover-placement="left" class="bg-[#1e1e1e] relative h-40 w-full md:h-full duration-200 group-hover:opacity-0"
+                    />
+                    <div class="group">
+                            <img src="/static/img/code.png" class="w-20 opacity-0 group-hover:opacity-100 absolute top-10 left-32 duration-150" alt="">
+                    </div>
                 </div>
-            </div>
+                <div class="group relative h-40 w-fit md:hidden bg-[#1e1e1e] duration-150">
+                    <img
+                        src="/static/img/artscreens.png"
+                        alt=""
+                        class="bg-[#1e1e1e] relative h-40 w-full md:h-full duration-200 group-hover:opacity-50"
+                    />
+                </div>
             </a>
-            <div class="bg-[#1e1e1e] w-80 flex flex-col justify-start items-center space-y-3 px-3 pb-3 rounded-b-xl">
-                
+            <div class="hidden bg-[#1e1e1e] md:flex md:flex-col md:w-80 md:justify-start md:items-center space-y-3 p-3 pb-3 rounded-b-xl">
                 <div class="flex space-x-2">
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-14 px-3">Go</button>
                     <button class="bg-[#2c2c2c] rounded-xl text-contentWhite font-bold font-alma w-25 px-3">TailwindCSS</button>
