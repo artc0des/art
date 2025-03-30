@@ -18,12 +18,8 @@
     <div id="main" class=" flex-col h-fit md:h-full bg-bgBlue duration-200">
         <div id="canvas" class="flex flex-col justify-center">
             {{template "nav" .}}
-            {{template "main" .}}
-            <section id="footer" class="container max-w-sm md:max-w-screen-lg xl:max-w-screen-xl mx-auto">
-                <div class="flex items-center">
-                        <p class="text-contentWhite font-light text-sm tracking-normal font-alma">This page was coded up by...me! Built with <a href="https://go.dev/" target="_blank" class="hover:font-bold hover:scale-110 duration-200 text-seaCreatureGreen">Go</a>, <a href="https://tailwindcss.com/" target="_blank" class="hover:font-bold hover:scale-110 duration-200 text-seaCreatureGreen">TailwindCSS</a> and a sprinkle of Javascript, then deployed to <a href="https://www.digitalocean.com/" target="_blank" class="hover:font-bold hover:scale-110 duration-200 text-seaCreatureGreen   ">Digital Ocean.</a></p>
-                </div>
-            </section>
+            {{template "main" .}} 
+            {{template "footer" .}} 
         </div>
     </div>
 </body>

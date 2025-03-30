@@ -19,6 +19,7 @@ func setTemplateCache() (map[string]*template.Template, error) {
 		files := []string{
 			"./ui/html/index.html",
 			"./ui/html/nav/nav.html",
+			"./ui/html/pages/footer.html",
 			page,
 		}
 
